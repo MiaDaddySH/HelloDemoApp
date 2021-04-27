@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import HelloLoggingFramework
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+      let helloLogger = HelloLogger()
+      Text(helloLogger.hello(withText: "World123"))
             .padding()
     }
 }

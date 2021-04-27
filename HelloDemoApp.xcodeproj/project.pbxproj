@@ -13,6 +13,13 @@
 		0B31310A2637FA00004E044D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3131092637FA00004E044D /* Preview Assets.xcassets */; };
 		0B3131152637FA01004E044D /* HelloDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3131142637FA01004E044D /* HelloDemoAppTests.swift */; };
 		0B3131202637FA01004E044D /* HelloDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B31311F2637FA01004E044D /* HelloDemoAppUITests.swift */; };
+		0B31313E2637FCBB004E044D /* HelloLoggingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */; };
+		0B3131452637FCBB004E044D /* HelloLoggingFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3131442637FCBB004E044D /* HelloLoggingFrameworkTests.m */; };
+		0B3131472637FCBB004E044D /* HelloLoggingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3131372637FCBB004E044D /* HelloLoggingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B31314A2637FCBB004E044D /* HelloLoggingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */; };
+		0B31314B2637FCBB004E044D /* HelloLoggingFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0B31315926380C45004E044D /* HelloLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B31315726380C45004E044D /* HelloLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B31315A26380C45004E044D /* HelloLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B31315826380C45004E044D /* HelloLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,42 @@
 			remoteGlobalIDString = 0B3130FE2637F9F3004E044D;
 			remoteInfo = HelloDemoApp;
 		};
+		0B31313F2637FCBB004E044D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3130F72637F9F3004E044D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3131342637FCBA004E044D;
+			remoteInfo = HelloLoggingFramework;
+		};
+		0B3131412637FCBB004E044D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3130F72637F9F3004E044D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3130FE2637F9F3004E044D;
+			remoteInfo = HelloDemoApp;
+		};
+		0B3131482637FCBB004E044D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3130F72637F9F3004E044D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3131342637FCBA004E044D;
+			remoteInfo = HelloLoggingFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B31314F2637FCBC004E044D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0B31314B2637FCBB004E044D /* HelloLoggingFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B3130FF2637F9F3004E044D /* HelloDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +87,14 @@
 		0B31311B2637FA01004E044D /* HelloDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B31311F2637FA01004E044D /* HelloDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDemoAppUITests.swift; sourceTree = "<group>"; };
 		0B3131212637FA01004E044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloLoggingFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3131372637FCBB004E044D /* HelloLoggingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloLoggingFramework.h; sourceTree = "<group>"; };
+		0B3131382637FCBB004E044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B31313D2637FCBB004E044D /* HelloLoggingFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloLoggingFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3131442637FCBB004E044D /* HelloLoggingFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloLoggingFrameworkTests.m; sourceTree = "<group>"; };
+		0B3131462637FCBB004E044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B31315726380C45004E044D /* HelloLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloLogger.h; sourceTree = "<group>"; };
+		0B31315826380C45004E044D /* HelloLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B31314A2637FCBB004E044D /* HelloLoggingFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +120,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B3131322637FCBA004E044D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B31313A2637FCBB004E044D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B31313E2637FCBB004E044D /* HelloLoggingFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +144,8 @@
 				0B3131012637F9F3004E044D /* HelloDemoApp */,
 				0B3131132637FA01004E044D /* HelloDemoAppTests */,
 				0B31311E2637FA01004E044D /* HelloDemoAppUITests */,
+				0B3131362637FCBB004E044D /* HelloLoggingFramework */,
+				0B3131432637FCBB004E044D /* HelloLoggingFrameworkTests */,
 				0B3131002637F9F3004E044D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,8 @@
 				0B3130FF2637F9F3004E044D /* HelloDemoApp.app */,
 				0B3131102637FA01004E044D /* HelloDemoAppTests.xctest */,
 				0B31311B2637FA01004E044D /* HelloDemoAppUITests.xctest */,
+				0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */,
+				0B31313D2637FCBB004E044D /* HelloLoggingFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +200,39 @@
 			path = HelloDemoAppUITests;
 			sourceTree = "<group>";
 		};
+		0B3131362637FCBB004E044D /* HelloLoggingFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0B3131372637FCBB004E044D /* HelloLoggingFramework.h */,
+				0B3131382637FCBB004E044D /* Info.plist */,
+				0B31315726380C45004E044D /* HelloLogger.h */,
+				0B31315826380C45004E044D /* HelloLogger.m */,
+			);
+			path = HelloLoggingFramework;
+			sourceTree = "<group>";
+		};
+		0B3131432637FCBB004E044D /* HelloLoggingFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B3131442637FCBB004E044D /* HelloLoggingFrameworkTests.m */,
+				0B3131462637FCBB004E044D /* Info.plist */,
+			);
+			path = HelloLoggingFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B3131302637FCBA004E044D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3131472637FCBB004E044D /* HelloLoggingFramework.h in Headers */,
+				0B31315926380C45004E044D /* HelloLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0B3130FE2637F9F3004E044D /* HelloDemoApp */ = {
@@ -140,10 +242,12 @@
 				0B3130FB2637F9F3004E044D /* Sources */,
 				0B3130FC2637F9F3004E044D /* Frameworks */,
 				0B3130FD2637F9F3004E044D /* Resources */,
+				0B31314F2637FCBC004E044D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B3131492637FCBB004E044D /* PBXTargetDependency */,
 			);
 			name = HelloDemoApp;
 			productName = HelloDemoApp;
@@ -186,6 +290,43 @@
 			productReference = 0B31311B2637FA01004E044D /* HelloDemoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0B3131342637FCBA004E044D /* HelloLoggingFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B31314C2637FCBC004E044D /* Build configuration list for PBXNativeTarget "HelloLoggingFramework" */;
+			buildPhases = (
+				0B3131302637FCBA004E044D /* Headers */,
+				0B3131312637FCBA004E044D /* Sources */,
+				0B3131322637FCBA004E044D /* Frameworks */,
+				0B3131332637FCBA004E044D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloLoggingFramework;
+			productName = HelloLoggingFramework;
+			productReference = 0B3131352637FCBA004E044D /* HelloLoggingFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0B31313C2637FCBB004E044D /* HelloLoggingFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B3131502637FCBC004E044D /* Build configuration list for PBXNativeTarget "HelloLoggingFrameworkTests" */;
+			buildPhases = (
+				0B3131392637FCBB004E044D /* Sources */,
+				0B31313A2637FCBB004E044D /* Frameworks */,
+				0B31313B2637FCBB004E044D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B3131402637FCBB004E044D /* PBXTargetDependency */,
+				0B3131422637FCBB004E044D /* PBXTargetDependency */,
+			);
+			name = HelloLoggingFrameworkTests;
+			productName = HelloLoggingFrameworkTests;
+			productReference = 0B31313D2637FCBB004E044D /* HelloLoggingFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +344,13 @@
 						TestTargetID = 0B3130FE2637F9F3004E044D;
 					};
 					0B31311A2637FA01004E044D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0B3130FE2637F9F3004E044D;
+					};
+					0B3131342637FCBA004E044D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0B31313C2637FCBB004E044D = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 0B3130FE2637F9F3004E044D;
 					};
@@ -224,6 +372,8 @@
 				0B3130FE2637F9F3004E044D /* HelloDemoApp */,
 				0B31310F2637FA01004E044D /* HelloDemoAppTests */,
 				0B31311A2637FA01004E044D /* HelloDemoAppUITests */,
+				0B3131342637FCBA004E044D /* HelloLoggingFramework */,
+				0B31313C2637FCBB004E044D /* HelloLoggingFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +396,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0B3131192637FA01004E044D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B3131332637FCBA004E044D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B31313B2637FCBB004E044D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +444,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B3131312637FCBA004E044D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B31315A26380C45004E044D /* HelloLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B3131392637FCBB004E044D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3131452637FCBB004E044D /* HelloLoggingFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +472,21 @@
 			isa = PBXTargetDependency;
 			target = 0B3130FE2637F9F3004E044D /* HelloDemoApp */;
 			targetProxy = 0B31311C2637FA01004E044D /* PBXContainerItemProxy */;
+		};
+		0B3131402637FCBB004E044D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3131342637FCBA004E044D /* HelloLoggingFramework */;
+			targetProxy = 0B31313F2637FCBB004E044D /* PBXContainerItemProxy */;
+		};
+		0B3131422637FCBB004E044D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3130FE2637F9F3004E044D /* HelloDemoApp */;
+			targetProxy = 0B3131412637FCBB004E044D /* PBXContainerItemProxy */;
+		};
+		0B3131492637FCBB004E044D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3131342637FCBA004E044D /* HelloLoggingFramework */;
+			targetProxy = 0B3131482637FCBB004E044D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -540,6 +735,96 @@
 			};
 			name = Release;
 		};
+		0B31314D2637FCBC004E044D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HelloLoggingFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miadaddy.HelloLoggingFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B31314E2637FCBC004E044D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HelloLoggingFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miadaddy.HelloLoggingFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B3131512637FCBC004E044D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				INFOPLIST_FILE = HelloLoggingFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miadaddy.HelloLoggingFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloDemoApp.app/HelloDemoApp";
+			};
+			name = Debug;
+		};
+		0B3131522637FCBC004E044D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				INFOPLIST_FILE = HelloLoggingFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miadaddy.HelloLoggingFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloDemoApp.app/HelloDemoApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +860,24 @@
 			buildConfigurations = (
 				0B31312B2637FA01004E044D /* Debug */,
 				0B31312C2637FA01004E044D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B31314C2637FCBC004E044D /* Build configuration list for PBXNativeTarget "HelloLoggingFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B31314D2637FCBC004E044D /* Debug */,
+				0B31314E2637FCBC004E044D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B3131502637FCBC004E044D /* Build configuration list for PBXNativeTarget "HelloLoggingFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3131512637FCBC004E044D /* Debug */,
+				0B3131522637FCBC004E044D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
